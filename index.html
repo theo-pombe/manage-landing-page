@@ -25,7 +25,7 @@
     <title>Manage landing page | Frontend Mentor</title>
   </head>
   <body class="font-BeVietnamPro">
-    <header class="container">
+    <header class="container px-4">
       <nav class="flex justify-between p-6 relative md:py-10 lg:py-16">
         <!-- Logo -->
         <div class="pt-2">
@@ -85,7 +85,7 @@
 
     <main>
       <!-- HERO SECTION-->
-      <section class="container mt-10">
+      <section class="container px-4 mt-10">
         <div
           class="flex flex-col-reverse items-center gap-12 md:px-6 lg:flex-row lg:justify-between lg:items-start"
         >
@@ -94,7 +94,7 @@
             class="flex flex-col items-center gap-5 lg:w-1/2 lg:items-start"
           >
             <h1
-              class="text-DarkBlue text-4xl text-center leading-snug font-bold md:w-10/12 lg:w-full lg:max-w-md lg:text-start lg:text-5xl"
+              class="text-DarkBlue text-4xl text-center leading-snug font-bold md:w-10/12 lg:w-full lg:max-w-md lg:text-start lg:text-5xl xl:max-w-2xl"
             >
               Bring everyone together to build better products.
             </h1>
@@ -120,6 +120,106 @@
           </div>
         </div>
       </section>
+
+      <!-- FEATURES SECTION -->
+      <section class="container mt-24 px-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <!-- Heading -->
+          <article
+            class="mb-16 text-center px-4 md:w-10/12 md:mx-auto md:mb-20 lg:w-2/5 lg:text-start lg:mb-0 lg:mx-0"
+          >
+            <h2
+              class="text-4xl text-DarkBlue leading-normal font-bold mb-6 lg:text-5xl"
+            >
+              What's different about Manage?
+            </h2>
+            <p class="text-DarkGrayishBlue text-lg leading-relaxed lg:text-xl">
+              Manage provides all the functionality your team needs, without the
+              complexity. Our software is tailor-made for modern digital product
+              teams.
+            </p>
+          </article>
+
+          <!-- Features -->
+          <article class="flex flex-col gap-12 ps-6 md:items-center md:-ps-6">
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex items-center font-bold bg-VeryPaleRed md:bg-white"
+              >
+                <span
+                  class="text-white text-center align-middle bg-BrightRed rounded-full px-6 py-2"
+                >
+                  01
+                </span>
+                <h3
+                  class="flex-1 text-DarkBlue ps-5 py-1 whitespace-nowrap lg:text-xl"
+                >
+                  Track company-wide progress
+                </h3>
+              </div>
+              <p
+                class="text-DarkGrayishBlue leading-relaxed md:ms-20 md:max-w-sm lg:text-xl"
+              >
+                See how your day-to-day tasks fit into the wider vision. Go from
+                tracking progress at the milestone level all the way done to the
+                smallest of details. Never lose sight of the bigger picture
+                again.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex items-center font-bold bg-VeryPaleRed md:bg-white"
+              >
+                <span
+                  class="text-white text-center align-middle bg-BrightRed rounded-full px-6 py-2"
+                >
+                  02
+                </span>
+                <h3
+                  class="flex-1 text-DarkBlue ps-5 py-1 whitespace-nowrap lg:text-xl"
+                >
+                  Advanced built-in reports
+                </h3>
+              </div>
+              <p
+                class="text-DarkGrayishBlue leading-relaxed md:ms-20 md:max-w-sm lg:text-xl"
+              >
+                Set internal delivery estimates and track progress toward
+                company goals. Our customisable dashboard helps you build out
+                the reports you need to keep key stakeholders informed.
+              </p>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex items-center font-bold bg-VeryPaleRed md:bg-white"
+              >
+                <span
+                  class="text-white text-center align-middle bg-BrightRed rounded-full px-6 py-2"
+                >
+                  03
+                </span>
+                <h3
+                  class="flex-1 text-DarkBlue ps-5 py-1 whitespace-nowrap lg:text-xl"
+                >
+                  Everything you need in one place
+                </h3>
+              </div>
+              <p
+                class="text-DarkGrayishBlue leading-relaxed md:ms-20 md:max-w-sm lg:text-xl"
+              >
+                Stop jumping from one service to another to communicate, store
+                files, track tasks and share documents. Manage offers an
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL -->
+      <section class="container mt-24"></section>
     </main>
 
     <script src="./dist/js/index.js"></script>

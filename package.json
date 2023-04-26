@@ -4,8 +4,10 @@
   "description": "This is a solution to the Manage landing page challenge on Frontend Mentor. Frontend Mentor challenges helps me improve my coding skills by building realistic projects.",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch",
-    "build:tsc": "tsc --watch --pretty"
+    "tailwind:build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css",
+    "tailwind:watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch",
+    "tsc:watch": "tsc --watch ",
+    "tsc:build": "tsc -pretty"
   },
   "keywords": [],
   "author": "",

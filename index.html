@@ -25,7 +25,7 @@
     <title>Manage landing page | Frontend Mentor</title>
   </head>
   <body class="font-BeVietnamPro">
-    <header class="container px-4">
+    <header class="container px-2 md:px-4">
       <nav class="flex justify-between p-6 relative md:py-10 lg:py-16">
         <!-- Logo -->
         <div class="pt-2">
@@ -35,7 +35,7 @@
         <!-- Navbar menu -->
         <div
           id="navbar-menu"
-          class="hidden absolute right-0 left-0 top-3/4 shadow-lg rounded py-10 md:block md:relative md:shadow-none md:rounded-none md:py-2"
+          class="hidden bg-white absolute right-0 left-0 top-3/4 shadow-lg rounded py-8 md:block md:relative md:shadow-none md:rounded-none md:py-2"
         >
           <ul
             class="flex flex-col items-center font-bold text-DarkBlue text-lg gap-6 md:flex-row md:flex-1 md:justify-end md:font-normal lg:justify-center lg:gap-8 xl:gap-16"
@@ -324,8 +324,22 @@
       </section>
 
       <!-- CTA -->
-      <section class="container mt-24 px-4"></section>
+      <section class="bg-BrightRed mt-24">
+        <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:py-12 md:space-y-0">
+          <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">Simplify how your team works today</h2>
+
+          <button
+            type="button"
+            class="text-BrightRed bg-white font-bold hover:bg-opacity-80 rounded-full shadow-2xl py-3 px-8"
+          >
+            Get Started
+          </button>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="container mt-24 px-4"></footer>
 
     <script src="./dist/js/index.js"></script>
   </body>

@@ -3,3 +3,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: 50px -50px;
+  background-size: 500px;
+  overflow-x: hidden;
+}
+
+.cta {
+  background-image: url("../../images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    background-position: 90% -25%;
+    background-size: 800px;
+  }
+
+  .cta {
+    background-image: url("../../images/bg-simplify-section-desktop.svg");
+  }
+}

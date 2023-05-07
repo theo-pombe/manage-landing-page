@@ -35,7 +35,7 @@
         <!-- Navbar menu -->
         <div
           id="navbar-menu"
-          class="hidden bg-white absolute right-0 left-0 top-3/4 shadow-lg rounded py-8 md:block md:relative md:shadow-none md:rounded-none md:py-2"
+          class="hidden bg-white absolute right-0 left-0 top-3/4 shadow-lg rounded py-8 md:block md:relative md:shadow-none md:rounded-none lg:bg-transparent md:py-2"
         >
           <ul
             class="flex flex-col items-center font-bold text-DarkBlue text-lg gap-6 md:flex-row md:flex-1 md:justify-end md:font-normal lg:justify-center lg:gap-8 xl:gap-16"
@@ -324,22 +324,26 @@
       </section>
 
       <!-- CTA -->
-      <section class="bg-BrightRed mt-24">
+      <section class="bg-BrightRed mt-24 cta">
         <div
           class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:py-12 md:space-y-0"
         >
-          <h2
-            class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
-          >
-            Simplify how your team works today
-          </h2>
+          <div class="text-center text-white md:text-left">
+            <h2
+              class="text-5xl font-bold leading-tight md:text-4xl md:max-w-xl"
+            >
+              Simplify how your team works today
+            </h2>
+          </div>
 
-          <button
-            type="button"
-            class="text-BrightRed bg-white font-bold hover:bg-opacity-80 rounded-full shadow-2xl py-3 px-8"
-          >
-            Get Started
-          </button>
+          <div>
+            <button
+              type="button"
+              class="text-BrightRed bg-white font-bold hover:bg-opacity-80 rounded-full shadow-2xl py-3 px-8"
+            >
+              Get Started
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -347,23 +351,51 @@
     <!-- FOOTER -->
     <footer class="bg-VeryDarkBlue text-white">
       <div
-        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-16 md:flex-row md:space-y-0"
+        class="container px-6 py-10 flex flex-col justify-between space-y-16 lg:flex-row-reverse lg:space-y-0"
       >
-        <!-- Logo & Social links -->
-        <article
-          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
-        >
-          <div class="mx-auto my-16 text-center md:hidden">
+        <!-- Form -->
+        <article class="flex flex-col justify-between md:mx-auto">
+          <form>
+            <div class="flex gap-x-3">
+              <input
+                type="text"
+                placeholder="updates in your inbox..."
+                class="flex-1 text-black rounded-full shadow-2xl focus:outline-none px-6 py-2 placeholder:text-DarkGrayishBlue"
+              />
+              <button
+                type="button"
+                class="bg-BrightRed text-white rounded-full shadow-2xl focus:outline-none px-6 py-2 hover:bg-opacity-80"
+              >
+                Go
+              </button>
+            </div>
+          </form>
+
+          <div class="hidden lg:block">
             <p>Copyright &copy; 2023, All Rights Reserve</p>
           </div>
+        </article>
 
-          <!-- Logo -->
-          <div>
-            <img src="./images/logo.svg" alt="" class="h-8" />
-          </div>
+        <!-- Navigation Links -->
+        <article class="flex justify-around lg:flex-1">
+          <ul class="flex flex-col space-y-3">
+            <li><a href="#" class="hover:text-BrightRed">Home</a></li>
+            <li><a href="#" class="hover:text-BrightRed">Pricing</a></li>
+            <li><a href="#" class="hover:text-BrightRed">Products</a></li>
+            <li><a href="#" class="hover:text-BrightRed">About Us</a></li>
+          </ul>
 
+          <ul class="flex flex-col space-y-3">
+            <li><a href="#" class="hover:text-BrightRed">Careers</a></li>
+            <li><a href="#" class="hover:text-BrightRed">Community</a></li>
+            <li><a href="#" class="hover:text-BrightRed">Privacy Policy</a></li>
+          </ul>
+        </article>
+
+        <!-- Logo & Social links -->
+        <article class="flex flex-col items-center gap-y-16 lg:items-start">
           <!-- Social links -->
-          <ul class="flex justify-center space-x-10 md:space-x-4">
+          <ul class="flex justify-center items-center gap-x-6">
             <li>
               <a href="#">
                 <img src="./images/icon-facebook.svg" alt="" class="h-8" />
@@ -390,45 +422,14 @@
               </a>
             </li>
           </ul>
-        </article>
 
-        <!-- Navigation Links -->
-        <article class="flex justify-around space-x-32">
-          <ul class="flex flex-col space-y-3">
-            <li><a href="#" class="hover:text-BrightRed">Home</a></li>
-            <li><a href="#" class="hover:text-BrightRed">Pricing</a></li>
-            <li><a href="#" class="hover:text-BrightRed">Products</a></li>
-            <li><a href="#" class="hover:text-BrightRed">About Us</a></li>
-          </ul>
+          <!-- Logo -->
+          <div>
+            <img src="./images/logo.svg" alt="" class="h-8" />
+          </div>
 
-          <ul class="flex flex-col space-y-3">
-            <li><a href="#" class="hover:text-BrightRed">Careers</a></li>
-            <li><a href="#" class="hover:text-BrightRed">Community</a></li>
-            <li><a href="#" class="hover:text-BrightRed">Privacy Policy</a></li>
-          </ul>
-        </article>
-
-        <!-- Form -->
-        <article class="flex flex-col justify-between">
-          <form>
-            <div class="flex space-x-3">
-              <input
-                type="text"
-                name=""
-                id=""
-                placeholder="updates in your inbox..."
-                class="flex-1 rounded-full shadow-2xl focus:outline-none text-black placeholder:text-DarkGrayishBlue px-6 py-3"
-              />
-              <button
-                type="button"
-                class="text-white bg-BrightRed hover:bg-opacity-80 focus:outline-none rounded-full shadow-2xl px-8 py-3"
-              >
-                Go
-              </button>
-            </div>
-          </form>
-          <div class="hidden text-white md:block">
-            Copyright &copy; 2023, All Rights Reserve
+          <div class="lg:hidden">
+            <p>Copyright &copy; 2023, All Rights Reserve</p>
           </div>
         </article>
       </div>
